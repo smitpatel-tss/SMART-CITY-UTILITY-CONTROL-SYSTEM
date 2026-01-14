@@ -84,7 +84,7 @@ public class SmartCityUtilityControlSystem {
         }
         float rebate = 0;
         if (units > 1000) {
-            rebate = energy_charge * 0.15f;
+            rebate = -(energy_charge * 0.15f);
         }
         electricityBillDisplay("Industrial", units, energy_charge, fixed_charge, rebate);
 
@@ -284,3 +284,4 @@ public class SmartCityUtilityControlSystem {
 
     }
 }
+
